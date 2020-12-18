@@ -1,0 +1,21 @@
+@import '../../node_modules/antd/dist/antd.css';
+@import 'Register.css';
+@import 'Main.css';
+@import "Login.css";
+@import "Header_index.css";
+@import "Header.css";
+
+.App {
+  text-align: center;
+}
+
+
+.App-intro {
+  font-size: large;
+}
+
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
