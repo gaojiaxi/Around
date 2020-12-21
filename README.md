@@ -54,7 +54,16 @@ Set the Target tags to be ‘es’, source IP ranges to be ‘0.0.0.0/0’, and 
 ![](https://github.com/gaojiaxi/Around/blob/master/demoPics/config_es_step1_3.png)  
 Wait until the firewall rules is created.   
 
-* Item 2
+2. step2: Find Compute Engine->VM instances  
+![](https://github.com/gaojiaxi/Around/blob/master/demoPics/config_es_step2_1.png)  
+Choose ‘Create’
+![](https://github.com/gaojiaxi/Around/blob/master/demoPics/config_es_step2_2.png)  
+Choose ‘Change’ and switch to Ubuntu 16. Keep the size of 10GB is fine.  
+![](https://github.com/gaojiaxi/Around/blob/master/demoPics/config_es_step2_3.png)
+![](https://github.com/gaojiaxi/Around/blob/master/demoPics/config_es_step2_4.png)  
+Then in the Networking -> Network tags, set it to be ‘es’ (the firewall rule that we created).   
+![](https://github.com/gaojiaxi/Around/blob/master/demoPics/config_es_step2_5.png)  
+
 * Item 3
     * Item 3a
     * Item 3b
