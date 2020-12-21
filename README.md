@@ -45,14 +45,14 @@ Here is how I configured my VIM
 
 ## How to configure and start elastic search engine in Google Compute Engine
 
-1. step1: Open your console.cloud.google.com. Then Find NETWORKING -> VPC network -> Firewall rules.
+1. step1: Open your console.cloud.google.com. Then Find NETWORKING -> VPC network -> Firewall rules.  
 ![](https://github.com/gaojiaxi/Around/blob/master/demoPics/config_es_step1_1.png)
 Click ‘CREATE FIREWALL RULE’
 ![](https://github.com/gaojiaxi/Around/blob/master/demoPics/config_es_step1_2.png)
-In the next page, give it a name like ‘elasticsearch’. 
-Set the Target tags to be ‘es’, source IP ranges to be ‘0.0.0.0/0’, and the specified protocols and ports to be ‘tcp:9200’. 
+In the next page, give it a name like ‘elasticsearch’.   
+Set the Target tags to be ‘es’, source IP ranges to be ‘0.0.0.0/0’, and the specified protocols and ports to be ‘tcp:9200’.   
 ![](https://github.com/gaojiaxi/Around/blob/master/demoPics/config_es_step1_3.png)
-Wait until the firewall rules is created. 
+Wait until the firewall rules is created.   
 
 * Item 2
 * Item 3
