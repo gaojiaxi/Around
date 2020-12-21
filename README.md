@@ -64,10 +64,43 @@ Choose ‘Change’ and switch to Ubuntu 16. Keep the size of 10GB is fine.
 Then in the Networking -> Network tags, set it to be ‘es’ (the firewall rule that we created).   
 ![](https://github.com/gaojiaxi/Around/blob/master/demoPics/config_es_step2_5.png)  
 
-* Item 3
-    * Item 3a
-    * Item 3b
-    * Item 3c
+3. step3: After one minute, you will see the instance is started. Choose ‘SSH’ and then ‘Open in browser window’.
+ ![](https://github.com/gaojiaxi/Around/blob/master/demoPics/config_es_step3_1.png)  
+ ![](https://github.com/gaojiaxi/Around/blob/master/demoPics/config_es_step3_2.png)  
+4. step4  
+ In the terminal, enter
+     ```
+   sudo apt-get update
+   sudo apt-get install default-jre
+    ```  
+   It will install java to your vm. To verify, enter ‘which java’ and ‘java -version’, you will see  
+   ![](https://github.com/gaojiaxi/Around/blob/master/demoPics/config_es_step4_1.png)  
+   Install ElasticSearch as below  
+   ```
+   wget https://download.elastic.co/elasticsearch/release/org/elasticsearch/distribution/deb/elasticsearch/2.3.1/elasticsearch-2.3.1.deb
+   sudo dpkg -i elasticsearch-2.3.1.deb
+   sudo systemctl enable elasticsearch.service
+   ```
+   Edit the configuration file  
+   ```
+   sudo vim /etc/elasticsearch/elasticsearch.yml
+   ```
+   Add two lines to the config, to allow all traffic and listen on port 9200.  
+   ```
+   network.host: 0.0.0.0
+   http.port: 9200
+   ```
+   Save this and start ElasticSearch  
+   ```
+   sudo service elasticsearch start
+   ```
+   Check the status of ElasticSearch  
+   ```
+   sudo service elasticsearch status
+   ```
+   If the service started correctly, you will see ‘active’ in the status  
+   ![](https://github.com/gaojiaxi/Around/blob/master/demoPics/config_es_step4_2.png) 
+
 
 Reasons for using such tech stacks <br>
 **1. Why choose Golang as backend language?**<br>
