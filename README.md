@@ -102,12 +102,12 @@ Then in the Networking -> Network tags, set it to be ‘es’ (the firewall rule
    ![](https://github.com/gaojiaxi/Around/blob/master/demoPics/config_es_step4_2.png) 
 
 
-Reasons for using such tech stacks <br>
+## Reasons for using such tech stacks <br>
 **1. Why choose Golang as backend language?**<br>
 * Go is built for system application, web application, i.e., we don’t need Django for python and TomCat for java. It has built-in web services to handle HTTP request/response, URL mapping…
 * Go has been very well designed and optimised for scaling(Go routine and channel)
 * Go is a fast, statically typed, compiled language that feels like a dynamically typed, interpreted language.
-* In my opinion, go the future of server language.
+* In my opinion, go is the future of server language.
 
 **2. Why choose ElasticSearch?**<br>
 * ES is an open source, distributed, RESTful search engine. As the heart of the Elastic Stack, it centrally stores our data so we can query the data quickly.
