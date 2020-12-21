@@ -21,7 +21,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class PostDumpFlow {
-    private static final String PROJECT_ID = "youraround-cmu";
+    private static final String PROJECT_ID = "Around";
     private static final Charset UTF8_CHARSET = Charset.forName("UTF-8");
 
     public static void main(String[] args) {
